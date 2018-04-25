@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock %}
+{% block content %}
+  	
+  	{% if user.is_authenticated %} 
+	  <form action="" method="POST" enctype="multipart/form-data">
+
+	  	<h1>Agregar VideJuego</h1>
+	    
+	    {% csrf_token %}
+	    {{ form.as_p }}
+
+	    <input class="btn btn-default" type="submit" value="Guardar" />
+	    <a class="btn btn-default" href="{%url 'vista_index'  %}">Cancelar</a> 
+	  </form>
+	{% else %}
+		<h2>Debes estar registrado para aceder a esta funcion</h2>
+	{% endif %}
+
+{% endblock %}

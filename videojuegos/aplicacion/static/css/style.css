@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 17pt;
+	font-family: arial;
+	color: white;
+}
+body{
+	background-attachment: fixed;/*imagen de fondo no se mueva*/
+  	background-repeat: no-repeat;/*Imagen de fondo no se replique*/
+  	background-size: cover;      /*Imagen do fondo ajustable a cualquier tamaño*/
+}
+
+/*===================================*/
+
+.margin_text{
+	margin: 0 20px;
+}
+
+/*==========NAV=================*/
+.nav_var{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 30px;
+}
+.nav_var ul {
+	background-color: rgba(0,0,0, .7);
+}
+nav ul li a {
+	color: #ddd;
+}
+
+nav .nav .presentation a:hover{
+	color: white;
+	background: #2c2f43;
+}
+
+/*Nombre del Usuario logeado*/
+.user{
+	text-transform: uppercase; /*Texto en MAYUSCULA*/
+	text-align: center;
+	padding: 10px 10px;
+	background: #2c2f37;
+}
+
+.txt_decorate:hover{
+	text-decoration: none;
+	color: white;
+}
+.sub_item_ul{
+	display: none;
+	position: absolute;
+}
+
+.user:hover > .sub_item_ul{
+	display: block;
+	text-decoration: none;
+}
+
+.sub_item_a{
+	background: #2c2f37;
+}
+
+/*=============END nav==============*/
+
+/*============TABLA==================*/
+
+table{
+	border: 1px solid #000;
+	background-color: rgba(0,0,0, .5);
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table th, table td{
+	border: 1px solid #000;
+	font-size: x-large;
+}
+
+.animadores th, .animadores td{
+	padding-left:10px;
+	padding-right:30px;
+}
+/*Nombres de la tabla donde se obserban los productos */
+.a_nombre{
+	text-decoration: none;
+	color: white;
+}
+/*====================================================*/
+
+
+/*Titulo de los HTML*/
+#titulo{
+	color: white;
+	font-size: 29pt;
+	margin: 0 30px;
+}
+/*==============================*/
+/*Div Fondo blanco con rgba*/
+#div-container{
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 2% 0 3% 4%;
+	background-color: rgba(0,0,0, .4);
+}
+/*==============================*/
+/*Imagen del template ver detalles*/
+#img_detalle{
+	width: 350px;
+	height: 350px;
+	margin: 10px 0;
+}
+/*==============================*/
+/*div de login y regiter*/
+.div_center{
+	text-align:center;
+    padding-bottom: 3%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form_center{
+	text-align: right;
+	border:solid 1px white;
+	display: inline-block;
+	padding: 4% 3%;
+	border-bottom: solid 2px black;
+	background-color: rgba(0,0,0, .4);
+}
+
+input,textarea,select,option{ 
+	color: black;
+	font-size: 14pt;
+}
+.div_center label{ 
+	font-size: 14pt;
+}
+
+.btn{
+	font-size: 16pt;
+	background-color: #2c2f43;
+	color: white;
+}
+
+.margin_login{
+	padding-top: 90px;
+}
+/*==============================*/

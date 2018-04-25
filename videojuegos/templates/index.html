@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock %}
+
+{% block content %}
+	<h1 class="div_center"> Lista de Juegos</h1>
+  <!--=====Tabla de Lista=======-->
+
+    <table>
+       {% for l in lista %}
+        <tr>
+          <td><a href="{%url 'ver_juego' id_juego=l.id %}"><img src="/media/{{ l.imagen }}" width="160px" height="120px"></a></td>
+          <td>
+            <p class="margin_text">
+              <a class="a_nombre" href="{%url 'ver_juego' id_juego=l.id %} "> <b>{{ l.nombre }}</b> </a> 
+              <br>
+              Vercion {{ l.version }} lanzada en {{ l.f_lanzamiento }} por <b>{{ l.desarrollador }}</b>
+              <br>
+
+              Valorado con {{ l.valoraciones }} estrellas 
+            </p>
+          </td>   
+        </tr>
+       {% endfor %}
+    </table>
+
+    {% if user.is_authenticated %}
+
+      <div class="div_center"><a class=" btn btn-default" href="{%url 'agregar_juego' %}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></a></div>
+    {% endif %}
+{% endblock %}
